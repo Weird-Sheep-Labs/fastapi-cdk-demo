@@ -1,6 +1,5 @@
 from fastapi.routing import APIRouter
-
-from ..models import Song
+from models import Song
 
 router = APIRouter()
 

@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 from fastapi.routing import APIRouter
 from mangum import Mangum
-
-from .routers import songs
+from routers import songs
 
 app = FastAPI(title="FastAPI CDK Demo", summary="FastAPI CDK demo by Weird Sheep Labs")
 router = APIRouter(prefix="/v1")
