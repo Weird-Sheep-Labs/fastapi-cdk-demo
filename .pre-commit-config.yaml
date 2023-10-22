@@ -19,3 +19,5 @@ repos:
     hooks:
       - id: poetry-check
       - id: poetry-lock
+      - id: poetry-export
+        args: ["-o", "api/v1/requirements.txt", "--without-hashes", "--without-urls", "--only", "api"]
