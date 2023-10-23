@@ -1,19 +1,9 @@
 repos:
-  - repo: https://github.com/pycqa/isort
-    rev: 5.12.0
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.1.1
     hooks:
-      - id: isort
-        name: isort (python)
-        args: ["--profile", "black"]
-  - repo: https://github.com/ambv/black
-    rev: 23.9.1
-    hooks:
-      - id: black
-  - repo: https://github.com/pycqa/flake8
-    rev: 6.1.0
-    hooks:
-      - id: flake8
-        additional_dependencies: ["flake8-bugbear==19.3.0"]
+      - id: ruff
+      - id: ruff-format
   - repo: https://github.com/python-poetry/poetry
     rev: 1.6.0
     hooks:

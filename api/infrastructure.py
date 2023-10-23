@@ -43,7 +43,9 @@ class FastApiCdkDemoStack(Stack):
         )
 
         apigw.LambdaRestApi(
-            self, "ApiGatewayEndpoint", handler=api_function  # type: ignore
+            self,
+            "ApiGatewayEndpoint",
+            handler=api_function,  # type: ignore
         )
 
         song_table.grant_read_write_data(api_function)

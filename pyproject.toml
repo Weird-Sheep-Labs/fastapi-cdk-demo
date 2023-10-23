@@ -20,6 +20,9 @@ python-dotenv = "^1.0.0"
 dyntastic = "^0.12.0"
 mangum = "^0.17.0"
 
+[tool.ruff]
+target-version = "py311"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
