@@ -15,10 +15,10 @@ pytest = "^7.4.2"
 pre-commit = "^3.5.0"
 
 [tool.poetry.group.api.dependencies]
-fastapi = {version = "<0.100", extras = ["all"]}
 python-dotenv = "^1.0.0"
-dyntastic = "^0.12.0"
 mangum = "^0.17.0"
+dyntastic = "0.13.0a1"
+fastapi = {extras = ["all"], version = "^0.104.1"}
 
 [tool.ruff]
 target-version = "py311"
